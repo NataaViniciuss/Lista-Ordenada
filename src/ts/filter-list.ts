@@ -11,4 +11,9 @@ export class FilterList {
     public static filterLowerCase(arr: string []): string[] {
         return arr.map(itens => itens.substring(0, 1).toUpperCase() + itens.slice(1));
     }
+
+    public static filterOnlySpaces(arr: string[]): string[] {
+        return arr.filter(item => item.trim() !== "");
+        
+    }
 }

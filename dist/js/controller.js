@@ -9,7 +9,8 @@ export class Controller {
         const filterNumbers = FilterList.filterNumbers(trasformInArray);
         const filterSpaces = FilterList.filterSpaces(filterNumbers);
         const filterLowerCase = FilterList.filterLowerCase(filterSpaces);
-        const sortList = TrasformAndSort.sortArray(filterLowerCase);
+        const filterOnlySpaces = FilterList.filterOnlySpaces(filterLowerCase);
+        const sortList = TrasformAndSort.sortArray(filterOnlySpaces);
         const insertNumber = TrasformAndSort.insertNumber(sortList);
         const transformInString = TrasformAndSort.transformInString(insertNumber);
         const orderedList = transformInString;

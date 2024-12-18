@@ -8,4 +8,7 @@ export class FilterList {
     static filterLowerCase(arr) {
         return arr.map(itens => itens.substring(0, 1).toUpperCase() + itens.slice(1));
     }
+    static filterOnlySpaces(arr) {
+        return arr.filter(item => item.trim() !== "");
+    }
 }
