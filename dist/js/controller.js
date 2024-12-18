@@ -3,7 +3,7 @@ import { GetElementDom } from "./get-element-dom.js";
 import { TrasformAndSort } from "./transform-and-sort.js";
 export class Controller {
     orderedList() {
-        const getElementDom = new GetElementDom('unordered-list', 'form-list', 'ordered-list', 'clear-list', "bottom-copy");
+        const getElementDom = new GetElementDom('unordered-list', 'form-list', 'ordered-list', 'clear-list', "bottom-copy", 'destination');
         const valueList = getElementDom.valueList();
         const trasformInArray = TrasformAndSort.trasformInArray(valueList);
         const filterNumbers = FilterList.filterNumbers(trasformInArray);

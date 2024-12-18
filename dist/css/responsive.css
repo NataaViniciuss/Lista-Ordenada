@@ -2,33 +2,46 @@
     #form-list {
         display: flex;
         flex-direction: column;
-        gap: 4vw;
+        justify-content: flex-start;
+        gap: 50vw;
+        position: relative;
+        top: 7vh;
     }
 
     .list-style {
-        width: 80vw;
-        height: 40vh;
-        padding: 2vw;
+        width: 85vw;
+        height: 60vh;
+        padding: 4vw;
+        position: relative;
+        font-size: 3.8vw;
     }
 
     .bottom-copy {
-        width: 84vw;
-        height: 4vw;
+        width: 93vw;
+        height: 8vw;
+        font-size: 3vw;
+        margin-bottom: 20vw;
     }
 
     .bottom-list {
-        width: 84vw;
-        height: 4vw;
+        width: 93vw;
+        height: 8vw;
     }
 
     .sort-list {
-        width: 42vw;
-        height: 4vw;
+        width: 46.5vw;
+        height: 8vw;
+        font-size: 3vw;
     }
 
     .clear-list {
-        width: 42vw;
-        height: 4vw;
+        width: 46.5vw;
+        height: 8vw;
+        font-size: 3vw;
+    }
+
+    .title-list {
+        font-size: 4.5vw;
     }
 }
 

@@ -1,10 +1,11 @@
 export class GetElementDom {
-    constructor(list, frm, sortList, clear, copy) {
+    constructor(list, frm, sortList, clear, copy, dest) {
         const getList = document.getElementById(list);
         const getFrm = document.getElementById(frm);
         const getOrderedList = document.getElementById(sortList);
         const bottomClear = document.getElementById(clear);
         const bottomcopy = document.getElementById(copy);
+        const screenDestination = document.getElementById(dest);
         if (getList) {
             this.getList = getList;
         }
@@ -35,6 +36,12 @@ export class GetElementDom {
         else {
             throw Error(`${copy} nÃo é um elemento do DOM`);
         }
+        if (screenDestination) {
+            this.screenDestination = screenDestination;
+        }
+        else {
+            throw Error(`${dest} nÃo é um elemento do DOM`);
+        }
     }
     valueList() {
         return this.getList.value;
@@ -53,5 +60,8 @@ export class GetElementDom {
     }
     copy() {
         return this.bottomCopy;
+    }
+    destination() {
+        return this.screenDestination;
     }
 }
